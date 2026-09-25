@@ -87,7 +87,7 @@ ssh -i ~/Downloads/your.key ubuntu@140.xxx.xxx.xxx
 ```bash
 # VM 上で実行
 sudo apt-get install -y git
-git clone https://github.com/nikkun22/urakick.git /opt/urakick-relay
+git clone https://github.com/tagtech-jp/urakick.git /opt/urakick-relay
 ```
 
 > GitHub がプライベートリポジトリの場合は SSH キーまたは Personal Access Token が必要。

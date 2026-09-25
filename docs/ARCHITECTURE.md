@@ -286,7 +286,7 @@ D:\urakick\
 ```
 ローカル編集 または GitHub web editor
   ↓ git push → main ブランチ
-GitHub（nikkun22/urakick）
+GitHub（tagtech-jp/urakick）
   ↓ Webhook
 Vercel（自動ビルド・デプロイ）
   ├── npm run build（Next.js Turbopack）

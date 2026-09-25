@@ -128,7 +128,7 @@ GitHub web editor で行を切り取り・貼り付けで順序変更できま�
 ## スマホからの編集（GitHub モバイルアプリ）
 
 1. GitHub アプリを開く
-2. `nikkun22/urakick` リポジトリ → `content/members/members.json` を開く
+2. `tagtech-jp/urakick` リポジトリ → `content/members/members.json` を開く
 3. 右上の `...` メニュー → 「Edit file」
 4. 編集して「Commit changes」
 

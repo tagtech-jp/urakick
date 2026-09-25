@@ -3,7 +3,7 @@
 **対象読者**: 裏キック団メンバー・運営担当（非エンジニア対応）  
 **最終更新**: 2026-05-04  
 **本番URL**: https://urakick.vercel.app/  
-**リポジトリ**: GitHub nikkun22/urakick
+**リポジトリ**: GitHub tagtech-jp/urakick
 
 ---
 
@@ -28,7 +28,7 @@ content/members.ts
 ```
 
 GitHub上でのURL（例）:  
-`https://github.com/nikkun22/urakick/blob/main/content/members.ts`
+`https://github.com/tagtech-jp/urakick/blob/main/content/members.ts`
 
 ### メンバー追加の手順（GitHub web editor）
 
@@ -106,7 +106,7 @@ content/rules/oki-10.mdx
 ```
 
 GitHub上でのURL（例）:  
-`https://github.com/nikkun22/urakick/blob/main/content/rules/oki-10.mdx`
+`https://github.com/tagtech-jp/urakick/blob/main/content/rules/oki-10.mdx`
 
 ### 改定手順（GitHub web editor）
 
