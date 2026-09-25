@@ -57,8 +57,6 @@
 | zenitu_desu.webp | 全一（団長） | — |
 | erupi1022.png | えるぴ | 約400 KB |
 | erupi1022.webp | えるぴ | — |
-| sayachioda.png | おださや | 約200 KB |
-| sayachioda.webp | おださや | — |
 | eseakanyan0928.png | エセアカにゃん | 410 KB |
 | eseakanyan0928.webp | エセアカにゃん | 37.5 KB |
 
