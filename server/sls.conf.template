@@ -1,0 +1,41 @@
+srt {
+    # srt-live-server (SLS) 設定テンプレート
+    # 配置先: /etc/sls/sls.conf
+    # 参考: https://github.com/Edward-Wu/srt-live-server
+
+    worker_threads      2;
+    worker_connections  128;
+
+    log_file    /var/log/sls/sls.log;
+    log_level   info;
+
+    server {
+        # srtla_rec がフォワードしてくる内部 SRT ポート
+        # 外部（ufw）には公開しない
+        listen      9000;
+
+        # SRT レイテンシ（ms）。配信安定性と遅延のトレードオフ
+        # 国内回線なら 1000〜2000ms が目安
+        latency     2000;
+
+        app {
+            app_player  live;
+            live        on;
+
+            # publisher: srtla_rec が stream ID "live/{port}" で接続
+            # subscriber: ffmpeg が SRT caller モードで pull
+
+            # メンバー別 stream ID 割当（参考）:
+            # member 01: live/5000 (srtla-rec@5000.service)
+            # member 02: live/5001 (srtla-rec@5001.service)
+            # member 03: live/5002 (srtla-rec@5002.service)
+            # member 04: live/5003 (srtla-rec@5003.service)
+            # member 05: live/5004 (srtla-rec@5004.service)
+            # member 06: live/5005 (srtla-rec@5005.service)
+            # member 07: live/5006 (srtla-rec@5006.service)
+            # member 08: live/5007 (srtla-rec@5007.service)
+            # member 09: live/5008 (srtla-rec@5008.service)
+            # member 10: live/5009 (srtla-rec@5009.service)
+        }
+    }
+}

@@ -1,0 +1,197 @@
+{
+  "$schema": "./schema.json",
+  "members": [
+    {
+      "slug": "zenitu_desu",
+      "name": "全一",
+      "role": "裏キック団 / 団長",
+      "avatar": "/avatars/zenitu_desu.png",
+      "streamingPlatforms": [
+        {
+          "platform": "kick",
+          "username": "zenitu_desu",
+          "url": "https://kick.com/zenitu_desu"
+        }
+      ],
+      "socials": [
+        { "platform": "x", "url": "https://x.com/zenitu1217" }
+      ]
+    },
+    {
+      "slug": "eseaka-nyan",
+      "name": "エセアカにゃん",
+      "role": "裏キック団 / メンバー",
+      "avatar": "/avatars/eseakanyan0928.png",
+      "streamingPlatforms": [
+        {
+          "platform": "kick",
+          "username": "eseakanyan0928",
+          "url": "https://kick.com/eseakanyan0928"
+        }
+      ],
+      "socials": [
+        { "platform": "x", "url": "https://x.com/eseakanyan2525" }
+      ]
+    },
+    {
+      "slug": "occhichi-hime",
+      "name": "おっちち姫",
+      "role": "裏キック団 / メンバー",
+      "avatar": "https://unavatar.io/x/akirametai_hime",
+      "streamingPlatforms": [
+        {
+          "platform": "kick",
+          "username": "akirametai_hime",
+          "url": "https://kick.com/akirametai_hime"
+        }
+      ],
+      "socials": [
+        { "platform": "x", "url": "https://x.com/akirametai_hime" }
+      ]
+    },
+    {
+      "slug": "erupi",
+      "name": "えるぴ",
+      "role": "裏キック団 / メンバー",
+      "avatar": "/avatars/erupi1022.png",
+      "streamingPlatforms": [
+        {
+          "platform": "kick",
+          "username": "erupi1022",
+          "url": "https://kick.com/erupi1022"
+        }
+      ],
+      "socials": [
+        { "platform": "x", "url": "https://x.com/erupi1022" }
+      ]
+    },
+    {
+      "slug": "aizawa-koki",
+      "name": "相沢香輝",
+      "role": "裏キック団 / メンバー",
+      "avatar": "https://unavatar.io/x/Kana_A369",
+      "streamingPlatforms": [
+        {
+          "platform": "kick",
+          "username": "kokiaizawa",
+          "url": "https://kick.com/kokiaizawa"
+        }
+      ],
+      "socials": [
+        { "platform": "x", "url": "https://x.com/Kana_A369" }
+      ]
+    },
+    {
+      "slug": "murohi",
+      "name": "奇天烈むろひ",
+      "role": "裏キック団 / メンバー",
+      "avatar": "https://unavatar.io/x/kiteretsumurohi",
+      "streamingPlatforms": [
+        {
+          "platform": "kick",
+          "username": "kiteretsu661",
+          "url": "https://kick.com/kiteretsu661"
+        }
+      ],
+      "socials": [
+        { "platform": "x", "url": "https://x.com/kiteretsumurohi" }
+      ]
+    },
+    {
+      "slug": "endy",
+      "name": "エンディー",
+      "role": "裏キック団 / メンバー",
+      "avatar": "https://unavatar.io/x/endy_yokosuka",
+      "streamingPlatforms": [
+        {
+          "platform": "kick",
+          "username": "endynomikamado",
+          "url": "https://kick.com/endynomikamado"
+        }
+      ],
+      "socials": [
+        { "platform": "x", "url": "https://x.com/endy_yokosuka" }
+      ]
+    },
+    {
+      "slug": "maruco",
+      "name": "まるこ",
+      "role": "裏キック団 / メンバー",
+      "avatar": "https://unavatar.io/x/xjapanlastgig",
+      "streamingPlatforms": [
+        {
+          "platform": "kick",
+          "username": "maruco10",
+          "url": "https://kick.com/maruco10"
+        }
+      ],
+      "socials": [
+        { "platform": "x", "url": "https://x.com/xjapanlastgig" }
+      ]
+    },
+    {
+      "slug": "naka-chan",
+      "name": "なかちゃん",
+      "role": "裏キック団 / メンバー",
+      "avatar": "https://unavatar.io/x/7980ken",
+      "streamingPlatforms": [
+        {
+          "platform": "kick",
+          "username": "naka7980naka",
+          "url": "https://kick.com/naka7980naka"
+        }
+      ],
+      "socials": [
+        { "platform": "x", "url": "https://x.com/7980ken" }
+      ]
+    },
+    {
+      "slug": "oda-saya",
+      "name": "おださや",
+      "role": "裏キック団 / メンバー",
+      "avatar": "/avatars/sayachioda.png",
+      "streamingPlatforms": [
+        {
+          "platform": "kick",
+          "username": "sayachioda",
+          "url": "https://kick.com/sayachioda"
+        }
+      ],
+      "socials": [
+        { "platform": "x", "url": "https://x.com/odayakachansaya" }
+      ]
+    },
+    {
+      "slug": "migi-chichi",
+      "name": "右乳",
+      "role": "裏キック団 / メンバー",
+      "avatar": "https://unavatar.io/x/migi_fuwa",
+      "streamingPlatforms": [
+        {
+          "platform": "kick",
+          "username": "migichichi",
+          "url": "https://kick.com/migichichi"
+        }
+      ],
+      "socials": [
+        { "platform": "x", "url": "https://x.com/migi_fuwa" }
+      ]
+    },
+    {
+      "slug": "pompika-satoshi",
+      "name": "ぽんぴかさとし",
+      "role": "裏キック団 / メンバー",
+      "avatar": "https://unavatar.io/x/PompikaSatoshi",
+      "streamingPlatforms": [
+        {
+          "platform": "kick",
+          "username": "pompikasatoshi",
+          "url": "https://kick.com/pompikasatoshi"
+        }
+      ],
+      "socials": [
+        { "platform": "x", "url": "https://x.com/PompikaSatoshi" }
+      ]
+    }
+  ]
+}

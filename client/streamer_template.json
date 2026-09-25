@@ -1,0 +1,24 @@
+{
+  "_note": "Moblin SRTLA 接続設定テンプレート。{{}} 内のプレースホルダーは generate_streamer_config.py で置換すること。Stream Key はここに記載しない。",
+  "name": "裏キック団 メンバー{{MEMBER_ID_PADDED}}",
+  "connection": {
+    "type": "srtla",
+    "host": "{{SRTLA_HOST}}",
+    "port": "{{SRTLA_PORT}}",
+    "streamId": "{{STREAM_ID}}"
+  },
+  "video": {
+    "codec": "H.264",
+    "bitrate_kbps": 6000,
+    "resolution": "1920x1080",
+    "fps": 60
+  },
+  "audio": {
+    "codec": "AAC",
+    "bitrate_kbps": 128
+  },
+  "srt": {
+    "latency_ms": 2000,
+    "adaptive_bitrate": true
+  }
+}

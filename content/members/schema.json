@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "UraKick Members",
+  "description": "裏キック団メンバー一覧のJSONスキーマ。VS Code / GitHub web editor で編集時に自動補完・バリデーションが有効になります。",
+  "type": "object",
+  "required": ["members"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "members": {
+      "type": "array",
+      "description": "メンバー一覧（表示順）",
+      "items": { "$ref": "#/definitions/Member" }
+    }
+  },
+  "definitions": {
+    "Member": {
+      "type": "object",
+      "required": ["slug", "name", "role", "avatar", "streamingPlatforms", "socials"],
+      "additionalProperties": false,
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9_-]+$",
+          "description": "URLで使用する一意のID（英小文字・数字・ハイフン・アンダースコアのみ）。変更不可"
+        },
+        "name": {
+          "type": "string",
+          "description": "サイトに表示される名前（ひらがな・カタカナ・漢字可）"
+        },
+        "handle": {
+          "type": "string",
+          "description": "ハンドルネーム（省略可）"
+        },
+        "role": {
+          "type": "string",
+          "description": "役割。団長は「裏キック団 / 団長」、一般メンバーは「裏キック団 / メンバー」"
+        },
+        "bio": {
+          "type": "string",
+          "description": "自己紹介文（省略可）。カードのアバター下に表示"
+        },
+        "avatar": {
+          "type": "string",
+          "description": "アバター画像。X（Twitter）アバターを使う場合: https://unavatar.io/x/{x_handle}　独自画像の場合: /avatars/{kick_username}.png"
+        },
+        "streamingPlatforms": {
+          "type": "array",
+          "description": "配信プラットフォームのリスト",
+          "items": { "$ref": "#/definitions/StreamingHandle" }
+        },
+        "socials": {
+          "type": "array",
+          "description": "SNSアカウントのリスト",
+          "items": { "$ref": "#/definitions/SocialLink" }
+        }
+      }
+    },
+    "StreamingHandle": {
+      "type": "object",
+      "required": ["platform", "username", "url"],
+      "additionalProperties": false,
+      "properties": {
+        "platform": {
+          "type": "string",
+          "enum": ["kick", "youtube", "twitch", "fuwacchi", "niconico", "twitcasting"],
+          "description": "配信プラットフォーム"
+        },
+        "username": {
+          "type": "string",
+          "description": "プラットフォーム上のユーザー名（URLの末尾部分）"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "配信チャンネルのURL（https://で始まること）"
+        }
+      }
+    },
+    "SocialLink": {
+      "type": "object",
+      "required": ["platform", "url"],
+      "additionalProperties": false,
+      "properties": {
+        "platform": {
+          "type": "string",
+          "enum": ["x", "instagram", "tiktok", "discord"],
+          "description": "SNSプラットフォーム"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "SNSプロフィールのURL"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+[Unit]
+Description=SRTLA Receiver port %i
+Documentation=https://github.com/BELABOX/srtla
+After=network.target sls.service
+Wants=sls.service
+
+[Service]
+Type=simple
+# %i = SRTLA 受信ポート番号（例: srtla-rec@5000.service → port 5000）
+# stream ID として "live/%i" を SLS に送信（SLS 内でメンバー識別に使用）
+ExecStart=/usr/local/bin/srtla_rec %i 127.0.0.1 9000 --srt-streamid live/%i
+Restart=on-failure
+RestartSec=5
+User=nobody
+
+# srtla_rec はバインドに UDP ポートを必要とするため CAP_NET_BIND_SERVICE は不要
+# （5000+ は特権ポートではない）
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+
+[Install]
+# setup_relay.sh がこのファイルを srtla-rec@.service としてコピーし
+# srtla-rec@5000.service 〜 srtla-rec@5009.service を enable する
+WantedBy=multi-user.target

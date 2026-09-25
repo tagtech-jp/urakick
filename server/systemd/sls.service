@@ -1,0 +1,24 @@
+[Unit]
+Description=SRT Live Server (SLS)
+Documentation=https://github.com/Edward-Wu/srt-live-server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/sls -c /etc/sls/sls.conf
+Restart=on-failure
+RestartSec=5
+User=nobody
+
+# ログディレクトリは setup_relay.sh が /var/log/sls/ として作成済み
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=sls
+
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/log/sls
+
+[Install]
+WantedBy=multi-user.target
