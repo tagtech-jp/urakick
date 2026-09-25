@@ -146,22 +146,6 @@
       ]
     },
     {
-      "slug": "oda-saya",
-      "name": "おださや",
-      "role": "裏キック団 / メンバー",
-      "avatar": "/avatars/sayachioda.png",
-      "streamingPlatforms": [
-        {
-          "platform": "kick",
-          "username": "sayachioda",
-          "url": "https://kick.com/sayachioda"
-        }
-      ],
-      "socials": [
-        { "platform": "x", "url": "https://x.com/odayakachansaya" }
-      ]
-    },
-    {
       "slug": "migi-chichi",
       "name": "右乳",
       "role": "裏キック団 / メンバー",
